@@ -1,14 +1,15 @@
 'use client'
 import React from 'react'
-import classes from './index.module.scss'
-import { inclusions, noHeaderFooterUrls } from '../../../constants'
-import { usePathname } from 'next/navigation'
-
-import { Gutter } from '../../Gutter'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 import { Footer, Media } from '../../../../payload/payload-types'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
 import { Button } from '../../Button'
+import { Gutter } from '../../Gutter'
+
+import classes from './index.module.scss'
 
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
@@ -39,7 +40,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
         <Gutter>
           <div className={classes.wrap}>
             <Link href="/">
-              <Image src="/logo-white.svg" alt="logo" width={170} height={50} />
+              <Image src="/edeniuslogotransp.png" alt="logo" width={170} height={50} />
             </Link>
             <p>{footer.copyright}</p>
             <div className={classes.socialLinks}>
@@ -54,12 +55,13 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     newTab={true}
                     className={classes.socialLinksItem}
                   >
-                    <Image 
+                    <Image
                       src={icon?.url}
                       alt={item.link.label}
                       width={24}
                       height={24}
-                      className={classes.socialIcon}/>
+                      className={classes.socialIcon}
+                    />
                   </Button>
                 )
               })}
