@@ -111,6 +111,8 @@ ol {
 
 a {
   color: var(--color-dark-500);
+  text-decoration: none ;
+
 
   &:focus {
     opacity: .8;
