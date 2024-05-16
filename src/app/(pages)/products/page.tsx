@@ -31,6 +31,17 @@ const Products = async () => {
 
   return (
     <div className={classes.container}>
+      <iframe
+        className={classes.iframe}
+        width="50%"
+        height="20"
+        scrolling="no"
+        frameBorder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1153854280&color=%23171818&inverse=false&auto_play=true&show_user=true"
+      ></iframe>
+      <HR />
+
       <Gutter className={classes.products}>
         <Filters categories={categories} />
         <Blocks blocks={page?.layout} disableTopPadding={true} />

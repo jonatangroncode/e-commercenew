@@ -13,7 +13,6 @@ export const Footer: GlobalConfig = {
       label: 'Copyright',
       type: 'text',
       required: true,
-       
     },
     {
       name: 'navItems',

@@ -1,0 +1,62 @@
+/* MobileNav.module.scss */
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .open {
+    transform: translateX(0);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navItems {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navItems li {
+    padding: 10px 0;
+  }
+  
+  .navItems li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+.nav {
+  display: flex;
+  gap: calc(var(--base) / 4) var(--base);
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity 100ms linear;
+  visibility: visible;
+
+  > * {
+    text-decoration: none;
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo {
+  width: 170px;
+}

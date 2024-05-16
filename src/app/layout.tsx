@@ -9,6 +9,7 @@ import { Providers } from './_providers'
 import { InitTheme } from './_providers/Theme/InitTheme'
 import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
 
+import 'tailwindcss/tailwind.css'
 import './_css/app.scss'
 
 const jost = Jost({

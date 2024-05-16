@@ -62,12 +62,7 @@ export const RecoverPasswordForm: React.FC = () => {
               error={errors.email}
               type="email"
             />
-            <Button
-              type="submit"
-              appearance="primary"
-              label="Recover Password"
-              className={classes.submit}
-            />
+            <Button type="submit" label="Recover Password" className={classes.submit} />
           </form>
         </React.Fragment>
       )}

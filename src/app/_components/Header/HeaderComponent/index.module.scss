@@ -11,6 +11,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: calc(var(--base) / 2) var(--base);
+    border-radius: 10px;
+    padding: 20px;
+    
+    background-color: #F0F0F0;
 }
 
 .logo{

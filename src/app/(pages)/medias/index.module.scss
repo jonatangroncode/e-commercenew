@@ -1,0 +1,84 @@
+/* index.module.scss */
+
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color; /* Example of using SCSS variable */
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-track {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .slick-slide {
+    float: left;
+    min-height: 1px;
+    display: none;
+  }
+  
+  .slick-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    color: #333333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .slick-prev:focus,
+  .slick-next:focus {
+    outline: none;
+  }
+  

@@ -24,4 +24,3 @@ const Categories = ({ categories }: { categories: Category[] }) => {
 }
 
 export default Categories
- 

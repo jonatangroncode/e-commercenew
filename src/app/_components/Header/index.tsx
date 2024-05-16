@@ -1,19 +1,16 @@
 import React from 'react'
-import Link from 'next/link'
 
-import { Header } from '../../../payload/payload-types'
 import { fetchHeader } from '../../_api/fetchGlobals'
 import HeaderComponent from './HeaderComponent'
-
+import MobileNav from './HeaderComponent/MobileNav'
 
 export async function Header() {
-  let header: Header | null = null
+  let header = null
 
   try {
     header = await fetchHeader()
   } catch (error) {
-    console.log(error)
-   
+    console.error(error)
   }
 
   return (
@@ -22,3 +19,5 @@ export async function Header() {
     </>
   )
 }
+
+export default Header

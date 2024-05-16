@@ -15,13 +15,7 @@ export default async function RecoverPassword() {
     <section className={classes.recoverPassword}>
       <div className={classes.heroImg}>
         <Link href="/">
-          <Image
-            src="/logo-black.svg"
-            alt="logo"
-            width={250}
-            height={23}
-            className={classes.logo}
-          />
+          <Image src="/swdlogo.png" alt="logo" width={250} height={23} className={classes.logo} />
         </Link>
       </div>
 
@@ -31,7 +25,7 @@ export default async function RecoverPassword() {
 
           <Link href="/login" className={classes.backLink}>
             <Image src="/assets/icons/arrow-left.svg" alt="left arrow" width={24} height={24} />
-            <p>Back</p>
+            <p style={{ color: 'white' }}>Back</p>
           </Link>
           <div className={classes.formTitle}>
             <h3>Forgot Password</h3>
